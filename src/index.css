@@ -1,13 +1,183 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  background-color: rgb(210, 206, 206);
+  overflow: hidden;
+  }
+  
+  code {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  div {
+      font-size: 15px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin: 5px;
+      color:darkcyan;
+  }
+  .todo-wrapper {
+    width: fit-content;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow:0px 5px 7px ;
+   background-color: antiquewhite;
+  }
+  
+  .todo-input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid ;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+   /* font-weight: 300;*/
+    color: black; 
+  }
+  .todo-input-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 2px;
+    font-weight: bold;
+    ;
+   
+  }
+  .todo-input-item label{
+    font-weight:bold;
+    margin-bottom: 10px;
+   
+  }
+  
+  .todo-input-item input {
+    padding: 8px;
+    border:none ;
+    width: 250px;
+  }
+  .todo-input-item input:focus {
+   outline: 2px solid;
+   color: darkcyan;
+   font-weight: bold;
+  }
+  
+  .primaryBtn {
+    background-color:darkcyan ;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    padding: 8px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .primaryBtn:hover {
+    background-color: rgb(26, 108, 82);
+  }
+  
+  .secondaryBtn {
+   background-color:rgb(56, 54, 54) ;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    padding: 8px;
+    width: fit-content;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: darkcyan;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btn-area {
+    margin-bottom: 15px;
+  }
+  
+  .todo-list-item {
+   background-color: rgb(210, 206, 206);
+   display: flex;
+   padding: 20px;
+   justify-content: space-between;
+   padding-bottom: 10px;
+   padding-top: 0px;
+  margin-bottom: 5px;
+  align-items: center;
+  }
+  .todo-list-item h3 {
+    font-size: 20px;
+    color: darkcyan;
+  }
+  p {
+    font-size: 15px;
+    color: rgb(54, 113, 113);
+  }
+  i {
+    font-size: 25px;
+    margin-top:10px ;
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+     justify-content:flex-end; 
+      margin-left:40px;
+       /* width: fit-content; */
+  }
+  
+  i:hover {
+  color: red;
+  }
+  
+  #check-icon {
+    font-size: 25px;
+    color: darkcyan;
+    /* position: absolute; */
+    display: inline;
+     margin-left:4px;
+     
+  }
+  
+  #check-icon:hover {
+    color: red;
+  }
+  
+  
+  .completeList-item {
+   background-color: rgb(210, 206, 206);
+   display: flex;
+   flex-direction: row;
+   padding: 20px;
+   /* justify-content: space-between; */
+   padding-bottom: 10px;
+   padding-top: 0px;
+  margin-bottom: 5px;
+  align-items:flex-start;
+   font-size: 25px;
+    margin-top:10px ;
+    cursor:pointer;
+    max-height: 80vh;
+  }
+  h6 {
+    font-size:small;
+    color:darkcyan;
+  }
+  
+  #delete-icon {
+   font-size: 25px;
+    color: darkcyan;
+    /* position: absolute; */
+    display: inline-block;
+     margin-left:350px;
+     padding-top: 40px;
+     
+  }
+  #delete-icon:hover {
+    color: red;
+  }
